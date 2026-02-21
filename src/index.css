@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+
+/* ===== Theme CSS Variables ===== */
+:root {
+  /* Light theme: navy palette maps to slate/gray tones */
+  --navy-50: 30 41 59;
+  --navy-100: 51 65 85;
+  --navy-200: 71 85 105;
+  --navy-300: 100 116 139;
+  --navy-400: 148 163 184;
+  --navy-500: 148 163 184;
+  --navy-600: 203 213 225;
+  --navy-700: 226 232 240;
+  --navy-800: 255 255 255;
+  --navy-900: 248 250 252;
+  --navy-950: 241 245 249;
+  --foreground: 15 23 42;
+}
+
+.dark {
+  /* Dark theme: original navy palette */
+  --navy-50: 240 244 248;
+  --navy-100: 217 226 236;
+  --navy-200: 188 204 220;
+  --navy-300: 159 179 200;
+  --navy-400: 130 154 177;
+  --navy-500: 98 125 152;
+  --navy-600: 72 101 129;
+  --navy-700: 51 78 104;
+  --navy-800: 36 59 83;
+  --navy-900: 16 42 67;
+  --navy-950: 10 25 41;
+  --foreground: 255 255 255;
+}
+
+@layer base {
+  body {
+    @apply bg-navy-950 text-foreground m-0;
+    font-family: 'Pretendard', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-navy-800 rounded-xl border border-navy-700 p-6 shadow-lg;
+  }
+  .card-header {
+    @apply text-lg font-semibold text-foreground mb-4;
+  }
+  .btn-primary {
+    @apply bg-maritime-blue hover:bg-maritime-sea text-white px-4 py-2 rounded-lg transition-colors duration-200 font-medium;
+  }
+  .btn-secondary {
+    @apply bg-navy-700 hover:bg-navy-600 text-foreground px-4 py-2 rounded-lg transition-colors duration-200 border border-navy-600 font-medium;
+  }
+  .sidebar-link {
+    @apply flex items-center gap-3 px-4 py-3 text-navy-300 hover:text-foreground rounded-lg transition-colors duration-200;
+  }
+  .sidebar-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  .dark .sidebar-link:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  .sidebar-link-active {
+    @apply flex items-center gap-3 px-4 py-3 text-foreground bg-maritime-blue/20 border-r-2 border-maritime-blue rounded-lg;
+  }
+  .table-header {
+    @apply bg-navy-800 text-navy-300 text-sm font-medium uppercase tracking-wider;
+  }
+  .table-row {
+    @apply border-b border-navy-700 transition-colors;
+  }
+  .table-row:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+  }
+  .dark .table-row:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+  }
+  .badge {
+    @apply px-2.5 py-0.5 rounded-full text-xs font-medium inline-block;
+  }
+  .badge-success {
+    @apply badge bg-green-500/20 text-green-400;
+  }
+  .badge-warning {
+    @apply badge bg-yellow-500/20 text-yellow-400;
+  }
+  .badge-danger {
+    @apply badge bg-red-500/20 text-red-400;
+  }
+  .badge-info {
+    @apply badge bg-blue-500/20 text-blue-400;
+  }
+  .badge-secondary {
+    @apply badge bg-navy-600/50 text-navy-300;
+  }
+  .input-field {
+    @apply w-full bg-navy-900 border border-navy-600 rounded-lg px-4 py-2.5 text-foreground placeholder-navy-400 focus:outline-none focus:ring-2 focus:ring-maritime-blue focus:border-transparent;
+  }
+  .select-field {
+    @apply w-full bg-navy-900 border border-navy-600 rounded-lg px-4 py-2.5 text-foreground focus:outline-none focus:ring-2 focus:ring-maritime-blue focus:border-transparent;
+  }
+}
