@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ship-management-system/static/css/main.e8f13430.css",
-    "main.js": "/ship-management-system/static/js/main.fe12cdbb.js",
+    "main.js": "/ship-management-system/static/js/main.316cb19d.js",
     "static/js/453.8a544822.chunk.js": "/ship-management-system/static/js/453.8a544822.chunk.js",
     "index.html": "/ship-management-system/index.html",
     "main.e8f13430.css.map": "/ship-management-system/static/css/main.e8f13430.css.map",
-    "main.fe12cdbb.js.map": "/ship-management-system/static/js/main.fe12cdbb.js.map",
+    "main.316cb19d.js.map": "/ship-management-system/static/js/main.316cb19d.js.map",
     "453.8a544822.chunk.js.map": "/ship-management-system/static/js/453.8a544822.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e8f13430.css",
-    "static/js/main.fe12cdbb.js"
+    "static/js/main.316cb19d.js"
   ]
 }
