@@ -4,6 +4,18 @@
 
 React 19 + TypeScript + Tailwind CSS 기반의 선박통합관리 웹 애플리케이션입니다.
 
+## 화면 미리보기
+
+| 대시보드 | 선박관리 |
+|---|---|
+| ![대시보드](screenshots/01_dashboard.png) | ![선박관리](screenshots/02_ships.png) |
+
+| 운항관리 | 정비관리 |
+|---|---|
+| ![운항관리](screenshots/03_voyages.png) | ![정비관리](screenshots/04_maintenance.png) |
+
+---
+
 ## 주요 기능
 
 - **대시보드** — KPI 카드, 함대 현황 차트, 실시간 알림
