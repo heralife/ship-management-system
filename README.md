@@ -2,6 +2,9 @@
 
 > Ship Integrated Management System
 
+[![Demo](https://img.shields.io/badge/🚢_Live_Demo-배포화면_보기-0077b6?style=for-the-badge)](https://heralife.github.io/ship-management-system)
+[![GitHub](https://img.shields.io/badge/GitHub-소스코드-181717?style=for-the-badge&logo=github)](https://github.com/heralife/ship-management-system)
+
 React 19 + TypeScript + Tailwind CSS 기반의 선박통합관리 웹 애플리케이션입니다.
 
 ## 화면 미리보기
