@@ -7,7 +7,7 @@ import AppRoutes from './routes/AppRoutes';
 function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/ship-management-system">
         <Layout>
           <AppRoutes />
         </Layout>
